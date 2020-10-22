@@ -7,9 +7,6 @@ import logoImg from '../images/logo-login.svg'
 import '../styles/pages/login.css'
 
 
-    
-
-
 function LogIn(){
     return (
         <div id="page-login">
@@ -35,11 +32,12 @@ function LogIn(){
                         </div>
                         <div className="input-block">
                             <div className="last-block">
-                                <input type="checkbox" name="Lembrar-me"/>
-                                <label>
-                                    Lembrar-me
-                                    <b>Esqueci minha senha</b>
+                                <label className="container">
+                                    <input type="checkbox"/>
+                                    <span className="checkmark"></span>
                                 </label>
+                                <label>Lembrar-me<button className="Forget-password">Esqueci minha senha</button></label>
+                                
                             </div>
                         </div>
                         <button className="confirm-button" type="submit">Entrar</button>
